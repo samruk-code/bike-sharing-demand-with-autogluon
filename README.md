@@ -55,9 +55,9 @@ Three model families were tuned manually and passed to AutoGluon:
 ![Test Score](model_test_score.png)
 
 ## Tech Stack
-- **Python** — pandas, NumPy, Matplotlib
-- **AutoGluon** — AutoML framework (ensemble of GBM, XGBoost, Random Forest, Neural Networks, and others)
-- **Kaggle API** — dataset download and submission
+- **Python** — pandas, NumPy, Matplotlib.
+- **AutoGluon** — AutoML framework (ensemble of GBM, XGBoost, Random Forest, Neural Networks, and others).
+- **Kaggle API** — dataset download and submission.
 
 ## Conclusion
 Feature engineering delivered the largest performance gain in this project, reducing RMSE by 65% by extracting time-based signals from the `datetime` column. Hyperparameter tuning provided only a marginal additional improvement, which reflects AutoGluon's strength as an AutoML solution — its internal optimization already produces near-optimal model configurations. With additional experimentation, further feature engineering (e.g., lag features, rolling averages, or weather interaction terms) would likely yield greater gains than additional hyperparameter tuning.
